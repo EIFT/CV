@@ -1,0 +1,83 @@
+:root {
+  --blu-cv: #032d77;
+  --gay-cv: #c9c9c9;
+}
+body {
+  background-color: black;
+  margin: 0;
+}
+.bar {
+  background-color: var(--blu-cv);
+  height: 120px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  color: var(--gay-cv);
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.stile-logo {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.stile-logo img {
+  width: 100px;
+  height: auto;
+  display: block;
+}
+.cv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  min-height: calc(100vh - 120px);
+}
+.cv-wrapper {
+  width: 100%;
+  max-width: 750px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--gay-cv);
+}
+.cv-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.btn-download {
+  margin-top: 25px;
+  padding: 12px 30px;
+  background-color: var(--blu-cv);
+  color: var(--gay-cv);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: background-color 0.2s, transform 0.2s;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.btn-download:hover {
+  background-color: #043b9c;
+  transform: translateY(-2px);
+}
+.cv-desc {
+  color: var(--gay-cv);
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: center;
+
+  width: 100%;
+  max-width: 750px;
+
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
